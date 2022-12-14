@@ -25,7 +25,7 @@
 6 - HD: 30.80
 
 ## Preparando imagem e iniciando a maquina.
-1 - Coficuracoes --> Armazenamento --> Controladora: IDE --> Vazio --> Drive Optico (Clique icone de disco no lado direito --> 'Escolher uma imagem de disco...(navegue ate a imagem que foi baixada) --> abrir --> ok.
+1 - Configurações --> Armazenamento --> Controladora: IDE --> Vazio --> Drive Optico (Clique icone de disco no lado direito --> 'Escolher uma imagem de disco...(navegue ate a imagem que foi baixada) --> abrir --> ok.
 
 2 - Iniciar a maquina.
 
