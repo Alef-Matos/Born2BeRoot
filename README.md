@@ -30,3 +30,11 @@
 2 - Iniciar a maquina.
 
 ## Instalando o Debian.
+
+1 - Install
+
+2 - Linguagem (Escolhi Portugues).
+
+3 - Localidade (Escolhi Portugal).
+
+4 - Layout do teclado (Americano)
