@@ -43,7 +43,7 @@
 
 7 - Nome do dominio (Domain name): Deixar em branco.
 
-8 - Palavra-passe de root: Cm30252 (A senha deve ter pelo menos 7 caracteres que não façam parte das outras senhas.)
+8 - Palavra-passe de root: 302523Ma (A senha deve ter pelo menos 7 caracteres que não façam parte das outras senhas.)
 
 9 - Nome Completo do novo utilizador: Seu nome.
 
@@ -60,3 +60,10 @@
 15 - Particoes /home, /var e /tmp separadas.
 
 16 - Sim
+
+17 - Palavra-passe Encryption: Cm910954627
+
+18 - Confirmar Palavra-passe.
+
+20 - Escrever max.
+
