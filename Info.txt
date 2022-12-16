@@ -11,3 +11,6 @@ Palavra-passe Encryption: Cm85235481
 - Verificar ip: ip almatos
 
 - Local do monitoring.sh : /usr/local/bin
+- Editar o sudors: sudo visudor
+- Sudo log: /var/log/sudo/sudo.log
+- Contag configuration:

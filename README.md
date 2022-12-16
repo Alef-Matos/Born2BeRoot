@@ -66,4 +66,3 @@
 18 - Confirmar Palavra-passe.
 
 20 - Escrever max.
-
