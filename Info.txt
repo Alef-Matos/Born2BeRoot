@@ -14,3 +14,9 @@ Palavra-passe Encryption: Cm85235481
 - Editar o sudors: sudo visudor
 - Sudo log: /var/log/sudo/sudo.log
 - Contag configuration:
+
+- Criando assinatura VM: sha1sum Born2beroot.vdi signature.txt
+- Status appArmor: sudo aa-status
+- Verificar interface grafica: ls /usr/bin/*session
+- Ver se o ufw esta em uso: sudo ufw status || sudo service ssh status
+- Ver qual meu OS: uname -v
