@@ -5,7 +5,7 @@
 ### Então, ao final deste projeto, você poderá configurar seu próprio sistema operacional enquanto implementa regras estritas.
 
 #
-## Coamandos para a avaliação - Grupos e Usuários:
+## Comandos para a avaliação - Grupos e Usuários:
 
 -- Ver os grupos: cat /etc/group ou getent group (sudo,user42)
 
@@ -32,7 +32,7 @@
 
 -- Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
 #
-## Coamandos para a avaliação - Verificações e Modificações:
+## Comandos para a avaliação - Verificações e Modificações:
 
 
 -- Ver particoes: lsblk
