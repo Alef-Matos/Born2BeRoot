@@ -15,8 +15,9 @@ Se houver suspeita de trapaça, a avaliação termina aqui. Use o "Cheat" Rag pa
 ## Instruções gerais
 	-Durante a defesa, assim que precisar de ajuda para verificar algum ponto, o aluno avaliado deverá auxiliá-lo.
 	-Certifique-se de que o arquivo "signature.txt" esteja presente na raiz do repositório clonado.
-	-Verifique se a assinatura contida em "signature.txt" é idêntica
-	ao do arquivo ".vdi" da máquina virtual a ser avaliada. Uma simples "diferença" deve permitir que você compare as duas assinaturas. Se necessário, pergunte ao aluno que está sendo avaliado onde está localizado o arquivo ".vdi".
+	-Verifique se a assinatura contida em "signature.txt" é idêntica ao do arquivo ".vdi" da máquina virtual a 
+	ser avaliada. Uma simples "diferença" deve permitir que você compare as duas assinaturas. Se necessário, pergunte ao 
+	aluno que está sendo avaliado onde está localizado o arquivo ".vdi".
 	-Por precaução, você pode duplicar a máquina virtual inicial para manter uma cópia.
 	-Inicie a máquina virtual a ser avaliada.
 
@@ -62,14 +63,21 @@ Se algo não funcionar como esperado ou não for claramente explicado, a avalia�
 ## Do utilizador
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
 
-O sujeito solicita que um usuário com o login do aluno avaliado esteja presente na máquina virtual. Verifique se foi adicionado e se pertence aos grupos "sudo" e "user42".
+O sujeito solicita que um usuário com o login do aluno avaliado esteja presente na máquina virtual. Verifique se foi adicionado e se 
+pertence aos grupos "sudo" e "user42".
 
 Certifique-se de que as regras impostas no assunto relativas à política de senha foram implementadas seguindo as etapas a seguir.
 
-Primeiro, crie um novo usuário. Atribua a ele uma senha de sua preferência, respeitando as regras do assunto. O aluno avaliado agora deve explicar para você como conseguiu configurar as regras solicitadas na disciplina em sua máquina virtual. Normalmente deve haver um ou dois arquivos modificados. Se houver algum problema, a avaliação para aqui.
+Primeiro, crie um novo usuário. Atribua a ele uma senha de sua preferência, respeitando as regras do assunto. O aluno avaliado agora 
+deve explicar para você como conseguiu configurar as regras solicitadas na disciplina em sua máquina virtual. Normalmente deve haver 
+um ou dois arquivos modificados. Se houver algum problema, a avaliação para aqui.
 
-	-Agora que você tem um novo usuário, peça ao aluno que está sendo avaliado para criar um grupo chamado "avaliando" na sua frente e atribua-o a esse usuário. Por fim, verifique se este usuário pertence ao grupo "avaliando".
-	-Por fim, peça ao aluno avaliado que explique as vantagens desta política de senhas, bem como as vantagens e desvantagens da sua implementação. Claro que responder que é porque o sujeito pede não conta.
+	-Agora que você tem um novo usuário, peça ao aluno que está sendo avaliado para criar um grupo chamado "avaliando" na sua
+	frente e atribua-o a 
+	esse usuário. Por fim, verifique se este usuário pertence ao grupo "avaliando".
+	-Por fim, peça ao aluno avaliado que explique as vantagens desta política de senhas, bem como as vantagens e desvantagens 
+	da sua implementação.
+	Claro que responder que é porque o subject pede não conta.
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
@@ -83,10 +91,11 @@ Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avali
 	Se na reinicialização, o nome do host não foi atualizado, a avaliação para aqui.
 	-Agora você pode restaurar a máquina para o nome do host original.
 	-Pergunte ao aluno avaliado como visualizar as partições para esta máquina virtual.
-	-Compare a saída com o exemplo dado no assunto. Atenção: caso o aluno avaliado faça as bonificações, será necessário consultar o exemplo de bonificação.
+	-Compare a saída com o exemplo dado no assunto. Atenção: caso o aluno avaliado faça as bonificações, será necessário consultar 
+	o exemplo de bonificação.
 
-Esta parte é uma oportunidade para discutir as pontuações! O aluno avaliado deverá lhe dar uma breve explicação de como funciona o LYM e do que se trata. 
-Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
+Esta parte é uma oportunidade para discutir as pontuações! O aluno avaliado deverá lhe dar uma breve explicação de como funciona 
+o LYM e do que se trata. Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -95,10 +104,12 @@ Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avali
 
 	-Verifique se o programa "sudo" está instalado corretamente na máquina virtual.
 	-O aluno avaliado já deve aparecer atribuindo seu novo usuário ao grupo "sudo".
-	-O assunto impõe regras estritas para o sudo. O aluno avaliado deve primeiro explicar o valor e o funcionamento do sudo usando exemplos de sua escolha.
+	-O assunto impõe regras estritas para o sudo. O aluno avaliado deve primeiro explicar o valor e o funcionamento do sudo usando 
+	exemplos de sua escolha.
 	Em uma segunda etapa, deve mostrar a implementação das regras impostas pelo assunto.
-	-Verifique se a pasta "/var/log/sudo/" existe e tem pelo menos um arquivo. Verifique o conteúdo dos arquivos nesta pasta, você deve ver um histórico 
-	dos comandos usados com o sudo. Por fim, tente executar um comando via sudo. Veja se o(s) arquivo(s) da pasta 11/var/log/sudo/11 foram atualizados.
+	-Verifique se a pasta "/var/log/sudo/" existe e tem pelo menos um arquivo. Verifique o conteúdo dos arquivos nesta pasta, você 
+	deve ver um histórico dos comandos usados com o sudo. Por fim, tente executar um comando via sudo. Veja se o(s) arquivo(s) 
+	da pasta 11/var/log/sudo/11 foram atualizados.
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
