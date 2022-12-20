@@ -6,7 +6,7 @@
 
 #
 ## Coamandos para a avaliação - Grupos e Usuários:
-#
+
 -- Ver os grupos: cat /etc/group ou getent group (sudo,user42)
 
 	-Observar se o user42 está na lista
@@ -33,7 +33,7 @@
 -- Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
 #
 ## Coamandos para a avaliação - Verificações e Modificações:
-#
+
 
 -- Ver particoes: lsblk
 
@@ -74,7 +74,7 @@
 -- Editar agendamentos automaticos: sudo crontab -u root -e (modificar tempo ex:10 para 1)
 #
 ## Outros Comandos Importantes:
-#
+
 -- Criar assinatura VM: sha1sum Born2beroot.vdi>signature.txt
 
 -- Conectar a maquina virtual (root) atraves de ssh (terminal externo): ssh root@localhost -p 4242
