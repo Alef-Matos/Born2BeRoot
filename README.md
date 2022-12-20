@@ -1,68 +1,88 @@
 # Born2BeRoot
 
+### Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você criará sua primeira máquina no VirtualBox sob instruções específicas. 
 
-## Preparativos
-1 - Ler o subject.
+### Então, ao final deste projeto, você poderá configurar seu próprio sistema operacional enquanto implementa regras estritas.
 
-2 - Pesquisar e Estudar.
+#
+## Coamandos para a avaliação - Grupos e Usuários:
+#
+-- Ver os grupos: cat /etc/group ou getent group (sudo,user42)
 
-3 - Instalar o Virtual box.
+	-Observar se o user42 está na lista
+	-Observar se o seu_user está no grupo user42 e no sudo
+-- Criar um grupo: sudo addgroup nome_do_grupo
 
-4 - Download do Debian.
+-- Deletar grupo: sudo delgroup nome_do_grupo
 
-5- Beber água.
-## Criando a VM (maquina virtual).
-1 - Nome:	Born2BeRoot
+-- Criar um novo user: sudo adduser nome_do_user
 
-2 - Local:	goinfre/VirtualBox VMs/
+	-Testar senha somente com menusculo
+	-Testar senha somente com maiusculo
+	-Testar senha com menusculo e maiusco com numero inferior a 10
+	-Testar caracter iguais
 
-3 - Tipo:	Linux
+-- Adicionar user no grupo: sudo adduser nome_do_user nome_do_grupo
 
-4 - Versao:	Debian (64-bit)
+-- Remover user do grupo: sudo deluser nome_do_user nome_do_grupo
 
-5 - Ram: 1024 mb
+-- Deletar user: sudo deluser nome_do_user
 
-6 - HD: 30.80
+	-se entrou no grupo tem que reiniciar a maquina
 
-## Preparando imagem e iniciando a maquina.
-1 - Configurações --> Armazenamento --> Controladora: IDE --> Vazio --> Drive Optico (Clique icone de disco no lado direito --> 'Escolher uma imagem de disco...(navegue ate a imagem que foi baixada) --> abrir --> ok.
+-- Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
+#
+## Coamandos para a avaliação - Verificações e Modificações:
+#
 
-2 - Iniciar a maquina.
+-- Ver particoes: lsblk
 
-## Instalando o Debian.
+-- Ver que sudo esta instalado: sudo dpkg -s sudo
 
-1 - Install
+-- ver SSH status: sudo service ssh status
 
-2 - Linguagem (Escolhi Portugues).
+-- Ver qual o OS da maquina: uname -v (Debian)
 
-3 - Localidade (Escolhi Portugal).
+-- Versão debian: cat /etc/os-release 
 
-4 - Layout do teclado (Inglês americano).
+-- Ver se tem interface grafica: ls /usr/bin/*session 
 
-6 - Nome do computador(Hostname): teu_user42(O nome do host de sua máquina virtual deve ser seu login terminando em 42).
+-- Ver se o ufw esta em uso: sudo ufw status ou sudo service ufw status
 
-7 - Nome do dominio (Domain name): Deixar em branco.
+-- Ver o hostname da maquina: hostname
 
-8 - Palavra-passe de root: 302523Ma (A senha deve ter pelo menos 7 caracteres que não façam parte das outras senhas.)
+-- Ver appArmor status: sudo aa-status
 
-9 - Nome Completo do novo utilizador: Seu nome.
+-- Ver ip e Mac: ip a
 
-10 - Nome de utilizador: teu_login_intra(login).
+-- Ver agendamentos sem parar o crontab: sudo crontab -l
 
-11 - Escolha uam palavra - passe: Acm3025235 (Sua senha deve ter pelo menos 10 caracteres. Deve conter uma letra maiúscula, uma letra minúscula e um número. Além disso, não deve conter mais de 3 caracteres idênticos consecutivos).
+-- Ver se o UFW esta instalado e a funcionar corretamente: dpkg -s ufw || sudo ufw status numbered
 
-12 - Fuso: Lisboa
+-- Ver as regras de configuracao do sudo: sudo visudo
 
-13 - Guiado - utilizar o disco inteiro e instalar LVM encriptado.
+-- Ver criterios password (expirar): nano /etc/login.defs
 
-14 - Enter.
+-- Ver criterios password: nano /etc/pam.d/common-password 
 
-15 - Particoes /home, /var e /tmp separadas.
+-- Modifcar hostname: sudo vim /etc/hostname ou sudo vim /etc/hosts (necessario fazer reboot)
 
-16 - Sim
+-- Faz stop dos agendamentos automaticos: sudo /etc/init.d/cron stop
 
-17 - Palavra-passe Encryption: Cm910954627
+-- Faz start dos agendamentos automaticos: sudo /etc/init.d/cron start
 
-18 - Confirmar Palavra-passe.
+-- Editar agendamentos automaticos: sudo crontab -u root -e (modificar tempo ex:10 para 1)
+#
+## Outros Comandos Importantes:
+#
+-- Criar assinatura VM: sha1sum Born2beroot.vdi>signature.txt
 
-20 - Escrever max.
+-- Conectar a maquina virtual (root) atraves de ssh (terminal externo): ssh root@localhost -p 4242
+
+-- Cria uma nova regra para a porta em questao: sudo ufw allow n_porta
+
+-- Apaga uma nova regra para a porta em questao: sudo ufw delete n_porta
+
+-- Configuracoes ssh: vin /etc/ssh/sshd_config || vin /etc/ssh/ssh_config
+
+-- Restart sshd: systemctl restart sshd

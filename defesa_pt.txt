@@ -1,0 +1,171 @@
+## Preliminares
+Se houver suspeita de trapaça, a avaliação termina aqui. Use o "Cheat" Rag para relatar se. Tome esta decisão com calma, sabedoria e, por favor, use este botão com cautela.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Testes preliminares
+	-A defesa só poderá acontecer se o aluno ou grupo avaliado estiver presente.
+	Assim todos aprendem compartilhando conhecimento uns com os outros.
+	-Se nenhum trabalho foi enviado (ou arquivos errados, diretório errado ou
+	nomes de arquivo errados), a nota é 0 e o processo de avaliação termina.
+	-Para este projeto, você deve clonar seu repositório Git em sua estação.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Instruções gerais
+	-Durante a defesa, assim que precisar de ajuda para verificar algum ponto, o aluno avaliado deverá auxiliá-lo.
+	-Certifique-se de que o arquivo "signature.txt" esteja presente na raiz do repositório clonado.
+	-Verifique se a assinatura contida em "signature.txt" é idêntica
+	ao do arquivo ".vdi" da máquina virtual a ser avaliada. Uma simples "diferença" deve permitir que você compare as duas assinaturas. Se necessário, pergunte ao aluno que está sendo avaliado onde está localizado o arquivo ".vdi".
+	-Por precaução, você pode duplicar a máquina virtual inicial para manter uma cópia.
+	-Inicie a máquina virtual a ser avaliada.
+
+Se algo não funcionar como esperado ou as duas assinaturas forem diferentes, a avaliação pára aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+###### Parte obrigatória:
+
+O projeto consiste na criação e configuração de uma máquina virtual seguindo regras estritas. O aluno avaliado terá que auxiliá-lo durante a defesa. Certifique-se de que todos os pontos a seguir sejam observados.
+
+## Visão Geral do Projeto:
+	-O aluno avaliado deve simplesmente explicar para você:
+	-O funcionamento básico de sua máquina virtual.
+	-Sua escolha de sistema operacional.
+	-As diferenças básicas entre Centos e Debian.
+	-O interesse das máquinas virtuais.
+	-Caso o aluno avaliado tenha optado pelo CentOS, ele deverá explicar para você o que são SELinux e DNF.
+	-Caso o aluno avaliado tenha optado pelo Debien ele precisará explicar a diferença entre aptitude e apt e o que é APPArmor. Durante a defesa, um script deve exibir todas as informações a cada 5 minutos. Seu funcionamento será verificado em detalhes posteriormente. Se as explicações não forem claras, a avaliação termina aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Configuração simples
+Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
+
+	-Certifique-se de que a máquina não tenha um ambiente gráfico na inicialização.
+	Uma senha será solicitada antes de tentar se conectar a esta máquina.
+
+Por fim, conecte-se com um usuário com a ajuda do aluno avaliado.
+
+Este usuário não deve ser root.
+
+Fique atento a senha escolhida, ela deve seguir as regras impostas no assunto.
+
+	-Verifique se o serviço UFW é iniciado com a ajuda do avaliador.
+	-Verifique se o serviço SSH foi iniciado com a ajuda do avaliador.
+	-Verifique se o sistema operacional escolhido é Debian ou Centos com a ajuda do revisor.
+
+Se algo não funcionar como esperado ou não for claramente explicado, a avaliação pára aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Do utilizador
+Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
+
+O sujeito solicita que um usuário com o login do aluno avaliado esteja presente na máquina virtual. Verifique se foi adicionado e se pertence aos grupos "sudo" e "user42".
+
+Certifique-se de que as regras impostas no assunto relativas à política de senha foram implementadas seguindo as etapas a seguir.
+
+Primeiro, crie um novo usuário. Atribua a ele uma senha de sua preferência, respeitando as regras do assunto. O aluno avaliado agora deve explicar para você como conseguiu configurar as regras solicitadas na disciplina em sua máquina virtual. Normalmente deve haver um ou dois arquivos modificados. Se houver algum problema, a avaliação para aqui.
+
+	-Agora que você tem um novo usuário, peça ao aluno que está sendo avaliado para criar um grupo chamado "avaliando" na sua frente e atribua-o a esse usuário. Por fim, verifique se este usuário pertence ao grupo "avaliando".
+	-Por fim, peça ao aluno avaliado que explique as vantagens desta política de senhas, bem como as vantagens e desvantagens da sua implementação. Claro que responder que é porque o sujeito pede não conta.
+
+Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Nome do host e partições
+Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
+
+	-Verifique se o hostname da máquina está formatado corretamente da seguinte forma: login42 (login do aluno avaliado).
+	-Modifique este nome de host substituindo o login pelo seu e reinicie a máquina.
+	Se na reinicialização, o nome do host não foi atualizado, a avaliação para aqui.
+	-Agora você pode restaurar a máquina para o nome do host original.
+	-Pergunte ao aluno avaliado como visualizar as partições para esta máquina virtual.
+	-Compare a saída com o exemplo dado no assunto. Atenção: caso o aluno avaliado faça as bonificações, será necessário consultar o exemplo de bonificação.
+
+Esta parte é uma oportunidade para discutir as pontuações! O aluno avaliado deverá lhe dar uma breve explicação de como funciona o LYM e do que se trata. 
+Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## SUDO
+Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
+
+	-Verifique se o programa "sudo" está instalado corretamente na máquina virtual.
+	-O aluno avaliado já deve aparecer atribuindo seu novo usuário ao grupo "sudo".
+	-O assunto impõe regras estritas para o sudo. O aluno avaliado deve primeiro explicar o valor e o funcionamento do sudo usando exemplos de sua escolha.
+	Em uma segunda etapa, deve mostrar a implementação das regras impostas pelo assunto.
+	-Verifique se a pasta "/var/log/sudo/" existe e tem pelo menos um arquivo. Verifique o conteúdo dos arquivos nesta pasta, você deve ver um histórico 
+	dos comandos usados com o sudo. Por fim, tente executar um comando via sudo. Veja se o(s) arquivo(s) da pasta 11/var/log/sudo/11 foram atualizados.
+
+Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## UFW
+Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
+
+	-Verifique se o programa "UFW" está instalado corretamente na máquina virtual.
+	-Verifique se está funcionando corretamente.
+	-O aluno avaliado que está sendo avaliado deve te explicar basicamente o que é UFW e o valor de utilizá-lo.
+	-Liste as regras ativas no UFW. Deve existir uma regra para a porta 4242.
+	-Adicione uma nova regra para abrir a porta 8080. Verifique se esta foi adicionada listando as regras ativas.
+	-Por fim, exclua essa nova regra com a ajuda do aluno avaliado.
+
+Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## SSH
+Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
+
+	-Verifique se o serviço SSH está instalado corretamente na máquina virtual.
+	-Verifique se está funcionando corretamente.
+	-O aluno avaliado deve ser capaz de te explicar basicamente o que é SSH e o valor de utilizá-lo.
+	-Verifique se o serviço SSH usa apenas a porta 4242.
+	-O aluno avaliado deverá auxiliá-lo na utilização do SSH para efetuar o login com o usuário recém-criado.
+
+Para fazer isso, você pode usar uma chave ou uma senha simples. Vai depender do aluno que está sendo avaliado.
+Obviamente, você deve se certificar de que não pode usar o SSH com o usuário "root", conforme indicado no assunto.
+
+Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Monitoramento de script
+
+Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
+
+O aluno avaliado deverá explicar-lhe de forma simples:
+
+	-A operação de seu script exibindo seu código.
+	-O que é "cron".
+	-Como a aluna avaliada configurou seu script para que seja executado a cada 10 minutos na inicialização do servidor.
+
+Uma vez verificado o correto funcionamento do script, o aluno avaliado deve garantir que este script seja executado a cada 30s. 
+Você pode rodar o que quiser para garantir que o script rode com valores dinâmicos corretamente, e o aluno avaliado deve fazer 
+com que o script pare de rodar quando o servidor inicializar, mas sem modificar o script. em si mesmo. Para verificar este ponto, 
+você terá que reiniciar o servidor uma última vez. Na inicialização, será necessário verificar se o script ainda existe no mesmo local, 
+se seus direitos permaneceram inalterados e se não foi modificado.
+
+Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+###### Part - Bônus
+Avalie a parte bônus se, e somente se, a parte obrigatória tiver sido completa e perfeitamente executada e o gerenciamento de 
+erros for inesperado ou de mau uso. Caso todos os pontos obrigatórios não tenham sido passados durante a defesa, os pontos de 
+bônus devem ser totalmente ignorados.
+
+## Bônus
+Confira, com a ajuda do sujeito e do aluno avaliado, os pontos de bonificação autorizados para este projeto:
+
+	-Configurar partições vale 2 pontos.
+	-Configurar o WordPress, apenas com os serviços exigidos pelo assunto, vale 2 pontos.
+	-O serviço de livre escolha vale 1 ponto.
+
+Verifique e teste o bom funcionamento e implementação de cada serviço extra.
+Para o serviço de livre escolha, o aluno avaliado tem que lhe dar uma explicação simples sobre como funciona e porque acha que é útil.
+Observe que NGINX e Apache2 são proibidos.

@@ -1,0 +1,91 @@
+Questoes teoricas:
+
+How a Virtual Machine works?
+A virtual machine (VM) is a virtual environment that functions as a virtual computer system with its own CPU, memory and storage, created on a physical hardware system (located off- or on-premises).
+It works as a separate independent machine, but it runs as a process on your host operating system. It’s a convenient way to dedicate a portion of your computer resources to a specific task or software. Per example runnig Debian inside Ubuntu.
+
+Choice of Operating System
+It's easier to install and configure than CentOS (and I haven't used CentOS before). I use Ubuntu for personal use which are both Debian flavours and wanted to understand them more deeply.
+
+The basic differences between CentOS and Debian
+CentOS vs Debian are two flavors of Linux operating systems. CentOS, as said above, is a Linux distribution. It is free and open-source. It is enterprise-class – industries can use meaning for server building; it is supported by a large community and is functionally supported by its upstream source, Red Hat Enterprise Linux. Debian is a Unix like computer operating system that is made up of open source components. It is built and supported by a group of individuals who are under the Debian project.
+
+Suported by Red Hat community vs Supported by Debian Individuals
+CentOS has a large market due to its larger support by community vs Debian lack market due to its terminal end usage
+CentOs does not come with multiple architecture support vs Debian has multiple architecture support
+New updates usually take a long time (making it stable but difficult to upgrade between versions) vs Debian can be easily upgraded from one stable version to another
+CentOS has a complicated GUI vs Debian has a user friendly apps and GUI
+CentOS uses YUM as its pack manager vs Debian uses apt-get as its package manager
+CentOS has limited packages vs Debian has a vast amount of packages in its default repository to do something
+
+nao suporta 32bit
+nao utiliza apparmor (selinux)
+nftables em vez d iptables
+
+The purpose of virtual machines
+VMs may be deployed to accommodate different levels of processing power needs, to run software that requires a different operating system, or to test applications in a safe, sandboxed environment.
+
+The difference between aptitude and apt
+
+Apart from main difference being that Aptitude is a high-level package manager while APT is lower-level package manager which can be used by other higher-level package managers, other main highlights that separate these two package managers are:
+
+    Aptitude is vaster in functionality than apt-get and integrates functionalities of apt-get and its other variants including apt-mark and apt-cache.
+
+While apt-get handles all the package installation, up-gradation, system-upgradation, purging package, resolving dependencies etc., Aptitude handles lot more stuff than apt, including functionalities of apt-mark and apt-cache i.e. searching for a package in list of installed packages, marking a package to be automatically or manually installed, holding a package making it unavailable for up-gradation and so on.
+
+    While apt-get lacks UI, Aptitude has a text-only and interactive UI
+
+Apt-get being a lower level package manager is restricted only to command line, while Aptitude being a higher-level tool has a default text-only interactive interface along with option of command-line operation by entering required commands.
+
+    Aptitude has a better package management than apt-get
+ 
+ What is APPArmor
+ AppArmor ("Application Armor") is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with per-program profiles.
+Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
+ 
+In practice, the kernel queries AppArmor before each system call to know whether the process is authorized to do the given operation. Through this mechanism, AppArmor confines programs to a limited set of resources.
+AppArmor applies a set of rules (known as “profile”) on each program. The profile applied by the kernel depends on the installation path of the program being executed. 
+AppArmor profiles are stored in /etc/apparmor.d/ and they contain a list of access control rules on resources that each program can make use of. The profiles are compiled and loaded into the kernel by the apparmor_parser command. Each profile can be loaded either in enforcing or complaining mode. The former enforces the policy and reports violation attempts, while the latter does not enforce the policy but still logs the system calls that would have been denied.
+
+Explain advantages of password policy and advantages and disadvantages of policy implementation
+In theory, the main benefit of password complexity rules is that they enforce the use of unique passwords that are harder to crack. The more requirements you enforce, the higher the number of possible combinations of letters, numbers, and characters.
+Password complexity rules try to enforce this “difficult to crack” requirement, but they aren’t always successful. This is partly to do with the diminishing returns involved in increasing complexity
+How much better is a 15 character password than a 30 character password if hackers know that longer password is frequently used? And is it better if the user can’t remember the password? Password complexity only scales up to a certain point. Beyond a certain point, a complex password can be difficult to crack if the number of possible combinations is extremely high, but it can also be too complex to be useful to users.
+
+LVM
+LVM stands for Logical Volume Management. It is a system of managing logical volumes, or filesystems, that is much more advanced and flexible than the traditional method of partitioning a disk into one or more segments and formatting that partition with a filesystem.
+
+There are 3 concepts that LVM manages:
+
+    Volume Groups
+    Physical Volumes
+    Logical Volumes 
+
+A Volume Group is a named collection of physical and logical volumes. Typical systems only need one Volume Group to contain all of the physical and logical volumes on the system. Physical Volumes correspond to disks; they are block devices that provide the space to store logical volumes. Logical volumes correspond to partitions: they hold a filesystem. Unlike partitions though, logical volumes get names rather than numbers, they can span across multiple disks, and do not have to be physically contiguous(next to each oher).
+
+Resizing Partitions
+With gparted you can expand and shrink partitions, but only if they are not in use. LVM can expand a partition while it is mounted, if the filesystem used on it also supports that
+LVM can use free space anywhere in the Volume Group, even on another disk, making it a very fast procces comparing eith the traditional way.
+Moving partitions with gparted is usually only necessary in the first place because of the requirement that partitions be physically contiguous, so you probably won't ever need to do this with LVM.
+LVM can move a partition while it is in use, and will not corrupt your data if it is interrupted.
+
+Moving Partitions
+Moving partitions with gparted is usually only necessary in the first place because of the requirement that partitions be physically contiguous, so you probably won't ever need to do this with LVM.
+LVM can move a partition while it is in use, and will not corrupt your data if it is interrupted
+
+Many Partitions
+With LVM you can create as many Logical Volumes as you wish, and it is usually quite easy since you usually have plenty of free space left. Usually people allocate the entire drive to one partition when they first install, but since extending a partition is so easy with LVM, there is no reason to do this. It is better to allocate only what you think you will need, and leave the rest of the space free for future use.
+
+Snapshots
+This is something you simply can not do without LVM. It allows you to freeze an existing Logical Volume in time, at any moment, even while the system is running. You can continue to use the original volume normally, but the snapshot volume appears to be an image of the original, frozen in time at the moment you created it.
+
+What is sudo
+there are two ways to run administrative applications: su - (switch user to root with admin privilegies)
+Sudo stands for either "substitute user do" or "super user do" and it allows you to temporarily elevate your current user account to have root privileges
+
+What is UFW
+The acronym "UFW" stands for "Uncomplicated Firewall" and refers to an application that aims to set rules in "iptables", the native firewall tables in Linux. Since iptables has a relatively complex syntax, using UFW to configure it is a useful alternative without skimping on security.
+UFW is a interface to modify the firewall of the device without compromising security. You use it to configure which ports to allow connections to and which ports to close. This is useful in conjunction with SSH, can set a specific port for it to work with.
+
+What is SSH
+SSH or Secure Shell is an authentication mechanism between a client and a host. It uses encryption techniques so that all communication between clients and hosts is done in encrypted form. User on Mac or Linux can use SSH the terminal to work on their server via SSH.
