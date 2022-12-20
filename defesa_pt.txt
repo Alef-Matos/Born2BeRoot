@@ -2,7 +2,7 @@
 Se houver suspeita de trapaça, a avaliação termina aqui. Use o "Cheat" Rag para relatar se. Tome esta decisão com calma, sabedoria 
 e, por favor, use este botão com cautela.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Testes preliminares
 	-A defesa só poderá acontecer se o aluno ou grupo avaliado estiver presente.
@@ -11,7 +11,7 @@ e, por favor, use este botão com cautela.
 	nomes de arquivo errados), a nota é 0 e o processo de avaliação termina.
 	-Para este projeto, você deve clonar seu repositório Git em sua estação.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Instruções gerais
 	-Durante a defesa, assim que precisar de ajuda para verificar algum ponto, o aluno avaliado deverá auxiliá-lo.
@@ -24,7 +24,7 @@ e, por favor, use este botão com cautela.
 
 Se algo não funcionar como esperado ou as duas assinaturas forem diferentes, a avaliação pára aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ###### Parte obrigatória:
 
@@ -42,7 +42,7 @@ durante a defesa. Certifique-se de que todos os pontos a seguir sejam observados
 	Durante a defesa, um script deve exibir todas as informações a cada 5 minutos. Seu funcionamento será verificado em detalhes 
 	posteriormente. Se as explicações não forem claras, a avaliação termina aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Configuração simples
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
@@ -62,7 +62,7 @@ Fique atento a senha escolhida, ela deve seguir as regras impostas no assunto.
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação pára aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Do utilizador
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
@@ -85,7 +85,7 @@ um ou dois arquivos modificados. Se houver algum problema, a avaliação para aq
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Nome do host e partições
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
@@ -101,7 +101,7 @@ Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avali
 Esta parte é uma oportunidade para discutir as pontuações! O aluno avaliado deverá lhe dar uma breve explicação de como funciona 
 o LYM e do que se trata. Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## SUDO
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
@@ -117,7 +117,7 @@ Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avali
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## UFW
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
@@ -131,7 +131,7 @@ Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avali
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## SSH
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.
@@ -147,7 +147,7 @@ Obviamente, você deve se certificar de que não pode usar o SSH com o usuário 
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Monitoramento de script
 
@@ -167,7 +167,7 @@ se seus direitos permaneceram inalterados e se não foi modificado.
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ###### Part - Bônus
 Avalie a parte bônus se, e somente se, a parte obrigatória tiver sido completa e perfeitamente executada e o gerenciamento de 
