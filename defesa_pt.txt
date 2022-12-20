@@ -27,7 +27,8 @@ Se algo não funcionar como esperado ou as duas assinaturas forem diferentes, a 
 
 ###### Parte obrigatória:
 
-O projeto consiste na criação e configuração de uma máquina virtual seguindo regras estritas. O aluno avaliado terá que auxiliá-lo durante a defesa. Certifique-se de que todos os pontos a seguir sejam observados.
+O projeto consiste na criação e configuração de uma máquina virtual seguindo regras estritas. O aluno avaliado terá que auxiliá-lo 
+durante a defesa. Certifique-se de que todos os pontos a seguir sejam observados.
 
 ## Visão Geral do Projeto:
 	-O aluno avaliado deve simplesmente explicar para você:
@@ -36,7 +37,9 @@ O projeto consiste na criação e configuração de uma máquina virtual seguind
 	-As diferenças básicas entre Centos e Debian.
 	-O interesse das máquinas virtuais.
 	-Caso o aluno avaliado tenha optado pelo CentOS, ele deverá explicar para você o que são SELinux e DNF.
-	-Caso o aluno avaliado tenha optado pelo Debien ele precisará explicar a diferença entre aptitude e apt e o que é APPArmor. Durante a defesa, um script deve exibir todas as informações a cada 5 minutos. Seu funcionamento será verificado em detalhes posteriormente. Se as explicações não forem claras, a avaliação termina aqui.
+	-Caso o aluno avaliado tenha optado pelo Debien ele precisará explicar a diferença entre aptitude e apt e o que é APPArmor. 
+	Durante a defesa, um script deve exibir todas as informações a cada 5 minutos. Seu funcionamento será verificado em detalhes 
+	posteriormente. Se as explicações não forem claras, a avaliação termina aqui.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
