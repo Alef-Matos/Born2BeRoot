@@ -1,22 +1,76 @@
 User root: almatos42
 Pass root: 30252357Acm
-
 User Utilizador: almatos
 Pass Utilizador: 9109546Asr
+Encryption: Cm85235481
 
-Palavra-passe Encryption: Cm85235481
+
+- Partições: lsblk
+	->(alias part='lsblk')
+
+- Os versão: cat /etc/os-release
+	->(alias os='cat /etc/os-release')
+
+- Sudo instalado: sudo dpkg -s sudo
+
+--------------------------------------------------------------------
+
+- Ver os grupos: cat /etc/group
+	->(alias vgroup='cat /etc/group | less')
+
+- Novo Grupo: sudo addgroup grupo
+- Deletar Grupo: sudo delgroup grupo
+- Novo Usuario: sudo adduser user
+- Deletar Usuario: sudo deluser user
+- Add user no grupo: sudo adduser user grupo 
+- Alterar password: passwd user 
+- AppArmor status: sudo aa-status
+
+--------------------------------------------------------------------
+
+- Ip: ip a || hostname -I
+- Hostname ver: hostname 
+- Hostname editar: sudo vim /etc/hostname
+- UFW status: sudo service ufw status
+- Nova porta UFW: sudo ufw allow 8080
+- Del porta UFW: sudo ufw del posição(n)
+- SSH status: sudo service ssh status
+- Acesso ssh: ssh user@ip -p 4242
+- SSH config: sudo vim /etc/ssh/ssh_config 
+	->(alias sshconfig='sudo vim /etc/ssh/ssh_config')
+
+- SSHD config: sudo vim /etc/ssh/ssh_config
+	->(alias sshdconfig='sudo vim /etc/ssh/sshd_config')
+
+- Restart sshd: systemctl restart sshd
+	->(alias restartsshd='systemctl restart sshd')
+
+--------------------------------------------------------------------
+
+- Cron: sudo crontab -u root -e
+- Stop cron: sudo /etc/init.d/cron stop
+	->(cron stop)
+
+- Start cron: sudo /etc/init.d/cron start
+	->(cron start)
+
+--------------------------------------------------------------------
+
+- Sudoers: sudo visudo
+- Pass (Expirar): sudo vim /etc/login.defs
+	->(alias passtime='sudo vim /etc/login.defs')
+
+- Pass: sudo vim /etc/pam.d/common-password 
+	->(alias passconfig='sudo vim /etc/pam.d/common-password')
+
+- Sudo log: sudo vim /var/log/sudo/sudo.log
+	->(alias sudolog='cat /var/log/sudo/sudo.log | less')
+
+- Script : /usr/local/bin
+- Interface: ls /usr/bin/*session
+	->(alias interface='ls /usr/bin/*session')
+- Comando util: less
+
+- Signature: sha1sum Born2beroot.vdi signature.txt
 
 
-- Acesso ssh: ssh almatos@ip -p 4242
-- Verificar ip: ip almatos
-
-- Local do monitoring.sh : /usr/local/bin
-- Editar o sudors: sudo visudor
-- Sudo log: /var/log/sudo/sudo.log
-- Contag configuration:
-
-- Criando assinatura VM: sha1sum Born2beroot.vdi signature.txt
-- Status appArmor: sudo aa-status
-- Verificar interface grafica: ls /usr/bin/*session
-- Ver se o ufw esta em uso: sudo ufw status || sudo service ssh status
-- Ver qual meu OS: uname -v

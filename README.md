@@ -86,3 +86,6 @@
 -- Configuracoes ssh: vin /etc/ssh/sshd_config || vin /etc/ssh/ssh_config
 
 -- Restart sshd: systemctl restart sshd
+
+
+
