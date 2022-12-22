@@ -1,5 +1,5 @@
 User root: almatos42
-Pass root: 30252Cm
+Pass root: 30252357Acm
 
 User Utilizador: almatos
 Pass Utilizador: 9109546Asr

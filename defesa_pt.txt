@@ -54,7 +54,7 @@ Por fim, conecte-se com um usuário com a ajuda do aluno avaliado.
 
 Este usuário não deve ser root.
 
-Fique atento a senha escolhida, ela deve seguir as regras impostas no assunto.
+Fique as regras impostas no assunto.
 
 	-Verifique se o serviço UFW é iniciado com a ajuda do avaliador.
 	-Verifique se o serviço SSH foi iniciado com a ajuda do avaliador.
@@ -113,7 +113,7 @@ Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avali
 	Em uma segunda etapa, deve mostrar a implementação das regras impostas pelo assunto.
 	-Verifique se a pasta "/var/log/sudo/" existe e tem pelo menos um arquivo. Verifique o conteúdo dos arquivos nesta pasta, você 
 	deve ver um histórico dos comandos usados com o sudo. Por fim, tente executar um comando via sudo. Veja se o(s) arquivo(s) 
-	da pasta 11/var/log/sudo/11 foram atualizados.
+	da pasta "/var/log/sudo/" foram atualizados.
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 

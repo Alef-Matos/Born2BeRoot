@@ -1,91 +1,194 @@
 Questoes teoricas:
 
-How a Virtual Machine works?
-A virtual machine (VM) is a virtual environment that functions as a virtual computer system with its own CPU, memory and storage, created on a physical hardware system (located off- or on-premises).
-It works as a separate independent machine, but it runs as a process on your host operating system. It’s a convenient way to dedicate a portion of your computer resources to a specific task or software. Per example runnig Debian inside Ubuntu.
+## Como funciona uma máquina virtual?
 
-Choice of Operating System
-It's easier to install and configure than CentOS (and I haven't used CentOS before). I use Ubuntu for personal use which are both Debian flavours and wanted to understand them more deeply.
+	Uma máquina virtual (VM) é um ambiente virtual que funciona como um sistema de computador virtual com 
+	CPU, memória e armazenamento próprios, criados em um sistema de hardware físico (localizado fora 
+	ou no local).
+	Ele funciona como uma máquina independente separada, mas é executado como um processo em seu sistema
+	operacional host. É uma maneira conveniente de dedicar uma parte dos recursos do seu computador a 
+	uma tarefa ou software específico. Por exemplo, executando o Debian dentro do Ubuntu.
 
-The basic differences between CentOS and Debian
-CentOS vs Debian are two flavors of Linux operating systems. CentOS, as said above, is a Linux distribution. It is free and open-source. It is enterprise-class – industries can use meaning for server building; it is supported by a large community and is functionally supported by its upstream source, Red Hat Enterprise Linux. Debian is a Unix like computer operating system that is made up of open source components. It is built and supported by a group of individuals who are under the Debian project.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
-Suported by Red Hat community vs Supported by Debian Individuals
-CentOS has a large market due to its larger support by community vs Debian lack market due to its terminal end usage
-CentOs does not come with multiple architecture support vs Debian has multiple architecture support
-New updates usually take a long time (making it stable but difficult to upgrade between versions) vs Debian can be easily upgraded from one stable version to another
-CentOS has a complicated GUI vs Debian has a user friendly apps and GUI
-CentOS uses YUM as its pack manager vs Debian uses apt-get as its package manager
-CentOS has limited packages vs Debian has a vast amount of packages in its default repository to do something
+## Escolha do sistema operacional:
 
-nao suporta 32bit
-nao utiliza apparmor (selinux)
-nftables em vez d iptables
+	É mais fácil de instalar e configurar do que o CentOS (e nunca usei o CentOS antes). Eu uso o Mint para 
+	uso pessoal, que são versões do Debian e queria entendê-los mais profundamente.
 
-The purpose of virtual machines
-VMs may be deployed to accommodate different levels of processing power needs, to run software that requires a different operating system, or to test applications in a safe, sandboxed environment.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
-The difference between aptitude and apt
+## As diferenças básicas entre CentOS e Debian:
 
-Apart from main difference being that Aptitude is a high-level package manager while APT is lower-level package manager which can be used by other higher-level package managers, other main highlights that separate these two package managers are:
+	CentOS vs Debian são dois tipos de sistemas operacionais Linux. CentOS, como dito acima, é uma distribuição 
+	Linux. É gratuito e de código aberto. É de classe empresarial – as indústrias podem usar significado para 
+	a construção de servidores; ele é suportado por uma grande comunidade e funcionalmente suportado por sua 
+	fonte upstream, Red Hat Enterprise Linux. O Debian é um sistema operacional de computador semelhante ao 
+	Unix, composto de componentes de código aberto. Ele é construído e mantido por um grupo de indivíduos que 
+	estão sob o projeto Debian.
 
-    Aptitude is vaster in functionality than apt-get and integrates functionalities of apt-get and its other variants including apt-mark and apt-cache.
+	1- CentOs não vem com suporte a arquitetura múltipla vs Debian tem suporte a arquitetura múltipla.
+	2- Novas atualizações geralmente levam muito tempo (tornando-o estável, mas difícil de atualizar entre as versões) 
+	   vs Debian pode ser facilmente atualizado de uma versão estável para outra.
+	3- CentOS tem uma GUI complicada vs Debian tem aplicativos e GUI amigáveis.
+	4- CentOS usa YUM como gerenciador de pacotes vs Debian usa apt-get como gerenciador de pacotes.
+	5- CentOS tem pacotes limitados vs Debian tem uma grande quantidade de pacotes em seu repositório padrão para fazer algo
 
-While apt-get handles all the package installation, up-gradation, system-upgradation, purging package, resolving dependencies etc., Aptitude handles lot more stuff than apt, including functionalities of apt-mark and apt-cache i.e. searching for a package in list of installed packages, marking a package to be automatically or manually installed, holding a package making it unavailable for up-gradation and so on.
+# nao suporta 32bit
+# nao utiliza apparmor (selinux)
+# nftables em vez d iptables
 
-    While apt-get lacks UI, Aptitude has a text-only and interactive UI
+------------------------------------------------------------------------------------------------------------------------------------------------
 
-Apt-get being a lower level package manager is restricted only to command line, while Aptitude being a higher-level tool has a default text-only interactive interface along with option of command-line operation by entering required commands.
+## O objetivo das máquinas virtuais:
 
-    Aptitude has a better package management than apt-get
- 
- What is APPArmor
- AppArmor ("Application Armor") is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with per-program profiles.
-Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
- 
-In practice, the kernel queries AppArmor before each system call to know whether the process is authorized to do the given operation. Through this mechanism, AppArmor confines programs to a limited set of resources.
-AppArmor applies a set of rules (known as “profile”) on each program. The profile applied by the kernel depends on the installation path of the program being executed. 
-AppArmor profiles are stored in /etc/apparmor.d/ and they contain a list of access control rules on resources that each program can make use of. The profiles are compiled and loaded into the kernel by the apparmor_parser command. Each profile can be loaded either in enforcing or complaining mode. The former enforces the policy and reports violation attempts, while the latter does not enforce the policy but still logs the system calls that would have been denied.
+	As VMs podem ser implantadas para acomodar diferentes níveis de necessidades de poder de processamento, para executar 
+	software que requer um sistema operacional diferente ou para testar aplicativos em um ambiente seguro e em área restrita.
 
-Explain advantages of password policy and advantages and disadvantages of policy implementation
-In theory, the main benefit of password complexity rules is that they enforce the use of unique passwords that are harder to crack. The more requirements you enforce, the higher the number of possible combinations of letters, numbers, and characters.
-Password complexity rules try to enforce this “difficult to crack” requirement, but they aren’t always successful. This is partly to do with the diminishing returns involved in increasing complexity
-How much better is a 15 character password than a 30 character password if hackers know that longer password is frequently used? And is it better if the user can’t remember the password? Password complexity only scales up to a certain point. Beyond a certain point, a complex password can be difficult to crack if the number of possible combinations is extremely high, but it can also be too complex to be useful to users.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
-LVM
-LVM stands for Logical Volume Management. It is a system of managing logical volumes, or filesystems, that is much more advanced and flexible than the traditional method of partitioning a disk into one or more segments and formatting that partition with a filesystem.
+## A diferença entre aptitude e apt:
 
-There are 3 concepts that LVM manages:
+	Além da principal diferença ser que o Aptitude é um gerenciador de pacotes de alto nível, enquanto o APT é um gerenciador 
+	de pacotes de nível inferior que pode ser usado por outros gerenciadores de pacotes de nível superior, outros destaques
+	principais que separam esses dois gerenciadores de pacotes são:
+		
+		O Aptitude é mais vasto em funcionalidade do que o apt-get e integra funcionalidades do apt-get e suas outras variantes, 
+		incluindo apt-mark e apt-cache.
+
+	Enquanto o apt-get lida com toda a instalação do pacote, atualização, atualização do sistema, limpeza do pacote, 
+	resolução de dependências, etc., o Aptitude lida com muito mais coisas do que o apt, incluindo funcionalidades de 
+	apt-mark e apt-cache, ou seja, procurar um pacote em lista de pacotes instalados, marcando um pacote para ser instalado 
+	automaticamente ou manualmente, mantendo um pacote tornando-o indisponível para atualização e assim por diante.
+
+    Enquanto o apt-get não possui interface do usuário, o Aptitude possui uma interface do usuário somente texto e interativa.
+
+	O apt-get, sendo um gerenciador de pacotes de nível inferior, é restrito apenas à linha de comando, enquanto o 
+	Aptitude, sendo uma ferramenta de nível superior, possui uma interface interativa padrão somente de texto, juntamente 
+	com a opção de operação de linha de comando inserindo os comandos necessários.
+    
+	O Aptitude tem um gerenciamento de pacotes melhor que o apt-get.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+## O que e PPArmor?
+
+	AppArmor ("Application Armor") é um módulo de segurança do kernel do Linux que permite 
+	ao administrador do sistema restringir os recursos dos programas com perfis por programa.
+	Os perfis podem permitir recursos como acesso à rede, acesso ao soquete bruto e permissão
+	para ler, gravar ou executar arquivos em caminhos correspondentes.
+	
+	Na prática, o kernel consulta o AppArmor antes de cada chamada do sistema para saber se 
+	o processo está autorizado a fazer determinada operação. 
+	Por meio desse mecanismo, o AppArmor limita os programas a um conjunto limitado de recursos.
+	O AppArmor aplica um conjunto de regras (conhecido como “perfil”) em cada programa. 
+	O perfil aplicado pelo kernel depende do caminho de instalação do programa que está sendo 
+	executado.
+	Os perfis do AppArmor são armazenados em /etc/apparmor.d/ e contêm uma lista de regras 
+	de controle de acesso aos recursos que cada programa pode usar. Os perfis são compilados
+	e carregados no kernel pelo comando apparmor_parser. 
+	Cada perfil pode ser carregado no modo de imposição ou reclamação. O primeiro aplica a 
+	política e relata as tentativas de violação, enquanto o último não impõe a política, mas 
+	ainda registra as chamadas do sistema que teriam sido negadas.
+
+	Explicar as vantagens da política de senha e as vantagens e desvantagens da implementação 
+	da política
+	Em teoria, o principal benefício das regras de complexidade de senha é que elas impõem o 
+	uso de senhas exclusivas que são mais difíceis de decifrar. Quanto mais requisitos você 
+	aplicar, maior será o número de combinações possíveis de letras, números e caracteres.
+	As regras de complexidade de senha tentam impor esse requisito “difícil de decifrar”, mas 
+	nem sempre são bem-sucedidas. Isso tem a ver, em parte, com os retornos decrescentes 
+	envolvidos no aumento da complexidade.
+	Quão melhor é uma senha de 15 caracteres do que uma senha de 30 caracteres se os hackers 
+	souberem que senhas mais longas são usadas com frequência? E é melhor se o usuário não 
+	conseguir lembrar a senha? A complexidade da senha aumenta apenas até certo ponto. 
+	Além de um certo ponto, uma senha complexa pode ser difícil de decifrar se o número de 
+	combinações possíveis for extremamente alto, mas também pode ser muito complexa para 
+	ser útil aos usuários.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+## O que e LVM?
+
+	LVM significa Gerenciamento de Volume Lógico. É um sistema de gerenciamento de volumes 
+	lógicos, ou sistemas de arquivos, muito mais avançado e flexível do que o método 
+	tradicional de particionar um disco em um ou mais segmentos e formatar essa partição 
+	com um sistema de arquivos.
+
+# Existem 3 conceitos que o LVM gerencia:
 
     Volume Groups
     Physical Volumes
     Logical Volumes 
 
-A Volume Group is a named collection of physical and logical volumes. Typical systems only need one Volume Group to contain all of the physical and logical volumes on the system. Physical Volumes correspond to disks; they are block devices that provide the space to store logical volumes. Logical volumes correspond to partitions: they hold a filesystem. Unlike partitions though, logical volumes get names rather than numbers, they can span across multiple disks, and do not have to be physically contiguous(next to each oher).
+# Volume Group:
 
-Resizing Partitions
-With gparted you can expand and shrink partitions, but only if they are not in use. LVM can expand a partition while it is mounted, if the filesystem used on it also supports that
-LVM can use free space anywhere in the Volume Group, even on another disk, making it a very fast procces comparing eith the traditional way.
-Moving partitions with gparted is usually only necessary in the first place because of the requirement that partitions be physically contiguous, so you probably won't ever need to do this with LVM.
-LVM can move a partition while it is in use, and will not corrupt your data if it is interrupted.
+	E uma coleção nomeada de volumes físicos e lógicos. Os sistemas típicos 
+	precisam apenas de um grupo de volumes para conter todos os volumes físicos e lógicos do 
+	sistema. Volumes físicos correspondem a discos; eles são dispositivos de bloco que fornecem 
+	o espaço para armazenar volumes lógicos. Os volumes lógicos correspondem às partições: eles 
+	contêm um sistema de arquivos. Ao contrário das partições, porém, os volumes lógicos obtêm 
+	nomes em vez de números, eles podem se estender por vários discos e não precisam ser fisicamente 
+	contíguos (próximos um do outro).
 
-Moving Partitions
-Moving partitions with gparted is usually only necessary in the first place because of the requirement that partitions be physically contiguous, so you probably won't ever need to do this with LVM.
-LVM can move a partition while it is in use, and will not corrupt your data if it is interrupted
+# Resizing Partitions:
 
-Many Partitions
-With LVM you can create as many Logical Volumes as you wish, and it is usually quite easy since you usually have plenty of free space left. Usually people allocate the entire drive to one partition when they first install, but since extending a partition is so easy with LVM, there is no reason to do this. It is better to allocate only what you think you will need, and leave the rest of the space free for future use.
+	Com o gparted, você pode expandir e reduzir as partições, mas somente se elas não estiverem em uso. 
+	O LVM pode expandir uma partição enquanto ela está montada, se o sistema de arquivos usado nela 
+	também suportar isso
+	O LVM pode usar espaço livre em qualquer lugar do grupo de volumes, mesmo em outro disco, tornando-o 
+	um processo muito rápido comparando com o modo tradicional.
+	Mover partições com gparted geralmente só é necessário em primeiro lugar devido ao requisito de 
+	que as partições sejam fisicamente contíguas, então você provavelmente nunca precisará fazer isso com o LVM.
+	O LVM pode mover uma partição enquanto estiver em uso e não corromperá seus dados se for interrompido.
 
-Snapshots
-This is something you simply can not do without LVM. It allows you to freeze an existing Logical Volume in time, at any moment, even while the system is running. You can continue to use the original volume normally, but the snapshot volume appears to be an image of the original, frozen in time at the moment you created it.
+# Moving Partitions:
 
-What is sudo
-there are two ways to run administrative applications: su - (switch user to root with admin privilegies)
-Sudo stands for either "substitute user do" or "super user do" and it allows you to temporarily elevate your current user account to have root privileges
+	Mover partições com gparted geralmente só é necessário em primeiro lugar devido ao requisito de que as 
+	partições sejam fisicamente contíguas, então você provavelmente nunca precisará fazer isso com o LVM.
+	O LVM pode mover uma partição enquanto estiver em uso e não corromperá seus dados se for interrompido.
 
-What is UFW
-The acronym "UFW" stands for "Uncomplicated Firewall" and refers to an application that aims to set rules in "iptables", the native firewall tables in Linux. Since iptables has a relatively complex syntax, using UFW to configure it is a useful alternative without skimping on security.
-UFW is a interface to modify the firewall of the device without compromising security. You use it to configure which ports to allow connections to and which ports to close. This is useful in conjunction with SSH, can set a specific port for it to work with.
+# Many Partitions:
 
-What is SSH
-SSH or Secure Shell is an authentication mechanism between a client and a host. It uses encryption techniques so that all communication between clients and hosts is done in encrypted form. User on Mac or Linux can use SSH the terminal to work on their server via SSH.
+	Com LVM você pode criar quantos Volumes Lógicos desejar, e geralmente é bastante fácil, já que você geralmente
+	tem muito espaço livre sobrando. Normalmente, as pessoas alocam a unidade inteira para uma partição quando 
+	instalam pela primeira vez, mas como estender uma partição é tão fácil com o LVM, não há razão para fazer isso. 
+	É melhor alocar apenas o que você acha que vai precisar e deixar o restante do espaço livre para uso futuro.
+
+# Snapshots:
+
+	Isso é algo que você simplesmente não pode fazer sem o LVM. Ele permite que você congele um Volume Lógico 
+	existente no tempo, a qualquer momento, mesmo enquanto o sistema estiver em execução. Você pode continuar a 
+	usar o volume original normalmente, mas o volume do instantâneo parece ser uma imagem do original, congelada 
+	no tempo no momento em que você o criou.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+## O que e SUDO ?
+
+	existem duas maneiras de executar aplicativos administrativos: su - (mude o usuário 
+	para root com privilégios de administrador) Sudo significa "substituir user do" 
+	ou "super user do" e permite que você eleve temporariamente sua conta de usuário 
+	atual para ter privilégios de root
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+## O que e UFW ?
+
+	A sigla "UFW" significa "Uncomplicated Firewall" e refere-se a um aplicativo 
+	que visa definir regras em "iptables", as tabelas de firewall nativas do Linux. 
+	Como o iptables tem uma sintaxe relativamente complexa, usar o UFW para 
+	configurá-lo é uma alternativa útil sem comprometer a segurança.
+	O UFW é uma interface para modificar o firewall do dispositivo sem comprometer 
+	a segurança. Você o usa para configurar quais portas permitir conexões e quais 
+	portas fechar. Isso é útil em conjunto com SSH, pode definir uma porta específica 
+	para trabalhar.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+## O que e SSH ?
+
+	SSH ou Secure Shell é um mecanismo de autenticação entre um cliente e um 
+	host. Ele usa técnicas de criptografia para que toda a comunicação entre 
+	clientes e hosts seja feita de forma criptografada. O usuário no Mac ou 
+	Linux pode usar o terminal SSH para trabalhar em seu servidor via SSH.
