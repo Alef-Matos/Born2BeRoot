@@ -72,3 +72,23 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 :arrow_right: Ver o hostname da maquina: hostname
 
 :arrow_right: Ver appArmor status: sudo aa-status
+
+:arrow_right: Ver ip e Mac: ip a
+
+:arrow_right: Ver agendamentos sem parar o crontab: sudo crontab -l
+
+:arrow_right: Ver se o UFW esta instalado e a funcionar corretamente: dpkg -s ufw || sudo ufw status numbered
+
+:arrow_right: Ver as regras de configuracao do sudo: sudo visudo
+
+:arrow_right: Ver criterios password (expirar): nano /etc/login.defs
+
+:arrow_right: Ver criterios password: nano /etc/pam.d/common-password 
+
+:arrow_right: Modifcar hostname: sudo vim /etc/hostname ou sudo vim /etc/hosts (necessario fazer reboot)
+
+:arrow_right: Faz stop dos agendamentos automaticos: sudo /etc/init.d/cron stop
+
+:arrow_right: Faz start dos agendamentos automaticos: sudo /etc/init.d/cron start
+
+:arrow_right: Editar agendamentos automaticos: sudo crontab -u root -e (modificar tempo ex:10 para 1)
