@@ -27,8 +27,8 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 <summary> Bonus </summary>
 
 - :ballot_box_with_check: Configurar as partições corretamente para obter uma estrutura semelhante à do subject.
-- Configurar um site WordPress funcional com os seguintes serviços: lighttpd, Mari, aDB e PHP.
-- Configurar um serviço de sua escolha que considere útil (NGINX / Apache2).
+- :white_large_square: Bonus PartConfigurar um site WordPress funcional com os seguintes serviços: lighttpd, Mari, aDB e PHP.
+- :white_large_square: Bonus PartConfigurar um serviço de sua escolha que considere útil (NGINX / Apache2).
 
 </details>
 
@@ -37,8 +37,4 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 - :ballot_box_with_check: Get_next_line.
 - :ballot_box_with_check: Bonus
 
-## Fluxograma get_next_line.c
-<div align="center">
-<img src="https://github.com/Alef-Matos/get_next_line/blob/main/gnl.png" />
-</div>
 
