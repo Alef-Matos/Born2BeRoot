@@ -34,7 +34,7 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 
 ## Comandos para a avaliação
 
-- Grupos e Usuários:
+### Grupos e Usuários:
 Ver os grupos: cat /etc/group ou getent group (sudo,user42)
 
 :arrow_right: Criar um grupo: sudo addgroup nome_do_grupo
