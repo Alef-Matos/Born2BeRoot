@@ -51,6 +51,8 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 
 :arrow_right: Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
 
+#
+
 ### Verificações e Modificações:
 
 :arrow_right: Ver particoes: lsblk
