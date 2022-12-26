@@ -95,6 +95,8 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 
 ### Outros Comandos Importantes:
 
+#
+
 :arrow_right: Criar assinatura VM: sha1sum Born2beroot.vdi>signature.txt
 
 :arrow_right: Conectar a maquina virtual (root) atraves de ssh (terminal externo): ssh root@localhost -p 4242
