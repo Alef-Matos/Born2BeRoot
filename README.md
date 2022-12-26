@@ -1,4 +1,4 @@
-# Born2BeRoot
+# Born2BeRoot <a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cla88p9vf00110fmd8v1byjg9/project/2921681" alt="almatos's 42 ft_printf Score" /></a>
 
 ### Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você criará sua primeira máquina no VirtualBox sob instruções específicas. 
 
