@@ -19,7 +19,7 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 
 ### Born2BeRoot
 
-- :ballot_box_with_check: Born2BeRoot.
+- :ballot_box_with_check: Parte obrigatória: [Ver o Subject](https://github.com/alef-matos/Born2BeRoot/wiki).
 
 ### Parte bonus
 
