@@ -9,26 +9,17 @@
 
 -- Ver os grupos: cat /etc/group ou getent group (sudo,user42)
 
-	-Observar se o user42 está na lista
-	-Observar se o seu_user está no grupo user42 e no sudo
 -- Criar um grupo: sudo addgroup nome_do_grupo
 
 -- Deletar grupo: sudo delgroup nome_do_grupo
 
 -- Criar um novo user: sudo adduser nome_do_user
 
-	-Testar senha somente com menusculo
-	-Testar senha somente com maiusculo
-	-Testar senha com menusculo e maiusco com numero inferior a 10
-	-Testar caracter iguais
-
 -- Adicionar user no grupo: sudo adduser nome_do_user nome_do_grupo
 
 -- Remover user do grupo: sudo deluser nome_do_user nome_do_grupo
 
 -- Deletar user: sudo deluser nome_do_user
-
-	-se entrou no grupo tem que reiniciar a maquina
 
 -- Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
 #
