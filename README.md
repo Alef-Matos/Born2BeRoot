@@ -32,9 +32,28 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 
 </details>
 
-## Tarefas
+## Comandos para a avaliação
 
-- :ballot_box_with_check: Get_next_line.
+- Grupos e Usuários:
+Ver os grupos: cat /etc/group ou getent group (sudo,user42)
+
+:white_large_square: Criar um grupo: sudo addgroup nome_do_grupo
+
+:white_large_square: Deletar grupo: sudo delgroup nome_do_grupo
+
+:white_large_square: Criar um novo user: sudo adduser nome_do_user
+
+:white_large_square: Adicionar user no grupo: sudo adduser nome_do_user nome_do_grupo
+
+:white_large_square: Remover user do grupo: sudo deluser nome_do_user nome_do_grupo
+
+:white_large_square: Deletar user: sudo deluser nome_do_user
+
+:white_large_square:Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
+
+
+
+
 - :ballot_box_with_check: Bonus
 
 
