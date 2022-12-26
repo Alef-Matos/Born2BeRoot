@@ -35,76 +35,76 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 ## Comandos para avaliação
 
 ### Grupos e Usuários:
-:arrow_right: Ver os grupos: cat /etc/group ou getent group (sudo,user42)
+:arrow_right: Ver os grupos: `cat /etc/group` ou `getent group`
 
-:arrow_right: Criar um grupo: sudo addgroup nome_do_grupo
+:arrow_right: Criar um grupo: `sudo addgroup nome_do_grupo`
 
-:arrow_right: Deletar grupo: sudo delgroup nome_do_grupo
+:arrow_right: Deletar grupo: `sudo delgroup nome_do_grupo`
 
-:arrow_right: Criar um novo user: sudo adduser nome_do_user
+:arrow_right: Criar um novo user: `sudo adduser nome_do_user`
 
-:arrow_right: Adicionar user no grupo: sudo adduser nome_do_user nome_do_grupo
+:arrow_right: Adicionar user no grupo: `sudo adduser nome_do_user nome_do_grupo`
 
-:arrow_right: Remover user do grupo: sudo deluser nome_do_user nome_do_grupo
+:arrow_right: Remover user do grupo: s`udo deluser nome_do_user nome_do_grupo `
 
-:arrow_right: Deletar user: sudo deluser nome_do_user
+:arrow_right: Deletar user: `sudo deluser nome_do_user`
 
-:arrow_right: Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
+:arrow_right: Alterar password: `passwd nome_do_user` (se nao se meter nome muda a pass do root)
 
 #
 
 ### Verificações e Modificações:
 
-:arrow_right: Ver particoes: lsblk
+:arrow_right: Ver particoes: `lsblk`
 
-:arrow_right: Ver que sudo esta instalado: sudo dpkg -s sudo
+:arrow_right: Ver que sudo esta instalado: `sudo dpkg -s sudo`
 
-:arrow_right: ver SSH status: sudo service ssh status
+:arrow_right: ver SSH status: `sudo service ssh status`
 
-:arrow_right: Ver qual o OS da maquina: uname -v (Debian)
+:arrow_right: Ver qual o OS da maquina: `uname -v`
 
-:arrow_right: Versão debian: cat /etc/os-release 
+:arrow_right: Versão debian: `cat /etc/os-release` 
 
-:arrow_right: Ver se tem interface grafica: ls /usr/bin/*session 
+:arrow_right: Ver se tem interface grafica: `ls /usr/bin/*session`
 
-:arrow_right: Ver se o ufw esta em uso: sudo ufw status ou sudo service ufw status
+:arrow_right: Ver se o ufw esta em uso: `sudo ufw status` ou `sudo service ufw status`
 
-:arrow_right: Ver o hostname da maquina: hostname
+:arrow_right: Ver o hostname da maquina: `hostname`
 
-:arrow_right: Ver appArmor status: sudo aa-status
+:arrow_right: Ver appArmor status: `sudo aa-status`
 
-:arrow_right: Ver ip e Mac: ip a
+:arrow_right: Ver ip e Mac: `ip a`
 
-:arrow_right: Ver agendamentos sem parar o crontab: sudo crontab -l
+:arrow_right: Ver agendamentos sem parar o crontab: `sudo crontab -l`
 
-:arrow_right: Ver se o UFW esta instalado e a funcionar corretamente: dpkg -s ufw || sudo ufw status numbered
+:arrow_right: Ver se o UFW esta instalado e a funcionar corretamente: `dpkg -s ufw` || `sudo ufw status numbered`
 
-:arrow_right: Ver as regras de configuracao do sudo: sudo visudo
+:arrow_right: Ver as regras de configuracao do sudo: `sudo visudo`
 
-:arrow_right: Ver criterios password (expirar): nano /etc/login.defs
+:arrow_right: Ver criterios password (expirar): `vim /etc/login.defs`
 
-:arrow_right: Ver criterios password: nano /etc/pam.d/common-password 
+:arrow_right: Ver criterios password: `vim /etc/pam.d/common-password`
 
-:arrow_right: Modifcar hostname: sudo vim /etc/hostname ou sudo vim /etc/hosts (necessario fazer reboot)
+:arrow_right: Modifcar hostname: `sudo vim /etc/hostname ou sudo vim /etc/hosts` (necessario fazer reboot)
 
-:arrow_right: Faz stop dos agendamentos automaticos: sudo /etc/init.d/cron stop
+:arrow_right: Faz stop dos agendamentos automaticos: `sudo /etc/init.d/cron stop`
 
-:arrow_right: Faz start dos agendamentos automaticos: sudo /etc/init.d/cron start
+:arrow_right: Faz start dos agendamentos automaticos: `sudo /etc/init.d/cron start`
 
-:arrow_right: Editar agendamentos automaticos: sudo crontab -u root -e (modificar tempo ex:10 para 1)
+:arrow_right: Editar agendamentos automaticos: `sudo crontab -u root -e`
 
 ### Outros Comandos Importantes:
 
 #
 
-:arrow_right: Criar assinatura VM: sha1sum Born2beroot.vdi>signature.txt
+:arrow_right: Criar assinatura VM: `sha1sum Born2beroot.vdi > signature.txt`
 
-:arrow_right: Conectar a maquina virtual (root) atraves de ssh (terminal externo): ssh root@localhost -p 4242
+:arrow_right: Conectar a maquina virtual (root) atraves de ssh (terminal externo): `ssh root@localhost -p 4242`
 
-:arrow_right: Cria uma nova regra para a porta em questao: sudo ufw allow n_porta
+:arrow_right: Cria uma nova regra para a porta em questao: `sudo ufw allow n_porta`
 
-:arrow_right: Apaga uma nova regra para a porta em questao: sudo ufw delete n_porta
+:arrow_right: Apaga uma nova regra para a porta em questao: `sudo ufw delete n_porta`
 
-:arrow_right: Configuracoes ssh: vin /etc/ssh/sshd_config || vin /etc/ssh/ssh_config
+:arrow_right: Configuracoes ssh: `vim /etc/ssh/sshd_config` ou `vim /etc/ssh/ssh_config`
 
-:arrow_right: Restart sshd: systemctl restart sshd
+:arrow_right: Restart sshd: `systemctl restart sshd`
