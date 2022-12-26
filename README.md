@@ -49,11 +49,24 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 
 :arrow_right: Deletar user: sudo deluser nome_do_user
 
-:arrow_right:Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
+:arrow_right: Alterar password: passwd nome_do_user (se nao se meter nome muda a pass do root)
 
+### Verificações e Modificações:
 
+:arrow_right: Ver particoes: lsblk
 
+:arrow_right: Ver que sudo esta instalado: sudo dpkg -s sudo
 
-- :ballot_box_with_check: Bonus
+:arrow_right: ver SSH status: sudo service ssh status
 
+:arrow_right: Ver qual o OS da maquina: uname -v (Debian)
 
+:arrow_right: Versão debian: cat /etc/os-release 
+
+:arrow_right: Ver se tem interface grafica: ls /usr/bin/*session 
+
+:arrow_right: Ver se o ufw esta em uso: sudo ufw status ou sudo service ufw status
+
+:arrow_right: Ver o hostname da maquina: hostname
+
+:arrow_right: Ver appArmor status: sudo aa-status
