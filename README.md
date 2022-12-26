@@ -92,3 +92,17 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 :arrow_right: Faz start dos agendamentos automaticos: sudo /etc/init.d/cron start
 
 :arrow_right: Editar agendamentos automaticos: sudo crontab -u root -e (modificar tempo ex:10 para 1)
+
+### Outros Comandos Importantes:
+
+:arrow_right: Criar assinatura VM: sha1sum Born2beroot.vdi>signature.txt
+
+:arrow_right: Conectar a maquina virtual (root) atraves de ssh (terminal externo): ssh root@localhost -p 4242
+
+:arrow_right: Cria uma nova regra para a porta em questao: sudo ufw allow n_porta
+
+:arrow_right: Apaga uma nova regra para a porta em questao: sudo ufw delete n_porta
+
+:arrow_right: Configuracoes ssh: vin /etc/ssh/sshd_config || vin /etc/ssh/ssh_config
+
+:arrow_right: Restart sshd: systemctl restart sshd
