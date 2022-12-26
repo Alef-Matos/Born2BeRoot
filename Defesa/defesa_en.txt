@@ -24,6 +24,7 @@ the evaluation stops here.
 
 Mandatory part:
 
+
 The project consists of creating and configuring a virtual machine following strict rules. The student evaluated will have to help you during the defense. Make sure that all of the following points are observed.
 
 Project overview:

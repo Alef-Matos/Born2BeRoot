@@ -131,7 +131,7 @@ Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avali
 
 Se algo não funcionar como esperado ou não for claramente explicado, a avaliação para aqui.
 
-------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## SSH
 Lembre-se: Sempre que você precisar de ajuda para verificar algo, o aluno avaliado deve poder ajudá-lo.

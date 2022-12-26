@@ -24,3 +24,4 @@ wall " 	#Architecture: $(uname -a)
 	#Connections TCP : $tcp ESTABLISHED
 	#Network: IP $(hostname -I)($mac)
 	#Sudo : $sudo_log cmd"
+	
