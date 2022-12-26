@@ -6,7 +6,7 @@
 - [Introdução](#introdução)
 - [Parte obrigatória](#parte-obrigatória)
 - [Bonus](#parte-bonus)
-- [Tarefas](#tarefas)
+- [Comandos para avaliação](#comandos-para-avaliação)
 
 ## Introdução
 
@@ -32,7 +32,7 @@ Este projeto visa apresentá-lo ao maravilhoso mundo da virtualização, você c
 
 </details>
 
-## Comandos para a avaliação
+## Comandos para avaliação
 
 ### Grupos e Usuários:
 :arrow_right: Ver os grupos: cat /etc/group ou getent group (sudo,user42)
